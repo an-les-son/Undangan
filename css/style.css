@@ -8,9 +8,10 @@ body {
   font-size: 1.2rem;
   font-family: "Roboto", sans-serif;
   min-height: 4000px;
+  background-image: url(../img/flora-pattern2.png);
 }
 
-.hero::before {
+/* .hero::before {
   content: "";
   position: absolute;
   top: 0;
@@ -21,7 +22,7 @@ body {
   background-size: cover;
   background-position: center;
   z-index: -1;
-}
+} */
 
 /* Hero */
 
@@ -73,12 +74,13 @@ body {
 
 /* Home */
 .home {
-  background-image: url(../img/flora-pattern2.png);
+  /* background-image: url(../img/flora-pattern2.png);
   background-size: cover;
-  min-height: 100vh;
-  margin-top: -5.3rem;
-  padding-top: 12rem;
-  padding-bottom: 10rem;
+  min-height: 100vh; */
+  margin-top: -3.5rem;
+  padding-top: 15rem;
+  padding-bottom: 15rem;
+  border: 1px solid red;
 }
 
 .home h2 {
@@ -130,11 +132,11 @@ body {
 /* Info */
 
 .info {
-  background-image: url(../img/flora-pattern2.png);
+  /* background-image: url(../img/flora-pattern2.png);
   background-size: cover;
-  min-height: 100vh;
-  padding-top: 8rem;
-  padding-bottom: 10rem;
+  min-height: 100vh; */
+  padding-top: 15rem;
+  padding-bottom: 15rem;
 }
 
 .info h2 {
