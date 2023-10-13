@@ -11,19 +11,6 @@ body {
   background-image: url(../img/flora-pattern2.png);
 }
 
-/* .hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url(../img/flora-pattern2.png);
-  background-size: cover;
-  background-position: center;
-  z-index: -1;
-} */
-
 /* Hero */
 
 .hero {
@@ -82,7 +69,8 @@ body {
   padding-bottom: 15rem;
 }
 
-.home h2 {
+.home h2,
+.story h2 {
   font-family: "Great Vibes", cursive;
   font-size: 5rem;
 }
@@ -170,6 +158,22 @@ body {
 
 .info .card .card-header {
   text-transform: uppercase;
+}
+
+/* Story */
+
+.story {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.story span {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.story p {
+  font-size: 1rem;
 }
 
 /* Media Query */
