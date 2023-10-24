@@ -65,7 +65,7 @@ body {
   background-size: cover;
   min-height: 100vh; */
   margin-top: -3.5rem;
-  padding-top: 15rem;
+  padding-top: 7rem;
   padding-bottom: 15rem;
 }
 
@@ -211,12 +211,58 @@ body {
 .timeline li .timeline-image {
   width: 160px;
   height: 160px;
-  background-image: url(../img/ticket.jpg);
   background-size: cover;
   position: absolute;
   left: 50%;
   border-radius: 50%;
+  border: 1px solid black;
   transform: translateX(-50%);
+}
+
+.timeline li .timeline-panel {
+  width: 40%;
+  float: left;
+  border: 1px solid black;
+  padding: 2rem;
+  position: relative;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.timeline li .timeline-panel::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-top: 1px solid black;
+  border-left: 1px solid transparent;
+  border-right: 1px solid black;
+  border-bottom: 1px solid transparent;
+  right: -10px;
+  top: 65px;
+  transform: rotate(45deg);
+}
+
+.timeline li.timeline-inverted .timeline-panel {
+  float: right;
+}
+
+.timeline li.timeline-inverted .timeline-panel::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-top: 1px solid transparent;
+  border-left: 1px solid black;
+  border-right: 1px solid transparent;
+  border-bottom: 1px solid black;
+  left: -10px;
+  top: 65px;
+  /* transform: rotate(180deg); */
 }
 
 /* Media Query */
