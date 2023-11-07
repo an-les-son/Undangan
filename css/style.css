@@ -8,13 +8,20 @@ body {
   font-size: 1.2rem;
   font-family: "Roboto", sans-serif;
   min-height: 4000px;
-  background-image: url(../img/flora-pattern2.png);
+  /* background-image: url(../img/flora-pattern2.png); */
+  /* background-image: url(../img/FGM_1056.jpg); */
+  /* background-size: cover; */
 }
 
 /* Hero */
 
 .hero {
   min-height: 100vh;
+  background-color: black;
+  background-image: url(../img/FGM_1056.jpg);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: 50% 70%;
 }
 
 .hero h1 {
