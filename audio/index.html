@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Insert Audio</h1>
+    <audio id="music" loop src="./Merry.mp3"></audio>
+    <button id="play">Play</button>
+
+    <script>
+      let play = document.getElementById("play");
+      let music = document.getElementById("music");
+      function playMusic() {
+        music.play();
+      }
+      play.addEventListener("click", playMusic);
+    </script>
+  </body>
+</html>

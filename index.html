@@ -17,13 +17,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
   </head>
   <body>
+    <!-- Audio -->
+    <audio id="music" loop src="./audio/audio.mp3"></audio>
+        </audio>
     <!-- Hero -->
     <section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center">
       <main>
         <h4>Undangan Pernikahan</h4>
         <h1 class="mt-5">Fatiya & Anjar</h1>
-        <div class="simply-countdown mt-3 mx-auto"></div>
-        <a href="#info" class="btn btn-lg mt-5">Lihat Undangan</a>
+        <div class="simply-countdown mx-auto"></div>
+        <a href="#info" class="btn btn-lg mt-5" id="play">Lihat Undangan</a>
       </main>
     </section>
 
@@ -164,7 +167,7 @@
     <section id="story" class="story">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-md-8 col-10 text-center">
+        <div class="col-md-8 col-10 text-center judul">
           <span>Bagaiaman Cinta Kami Berseri</span>
           <h2>Cerita Kami</h2>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi doloremque unde, eaque quod ipsum rerum commodi quasi doloribus amet non, nesciunt, expedita nulla quisquam distinctio.</p>
@@ -227,7 +230,6 @@
       </div>
     </div>
     </section>
-
     <!-- JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="./js/simplyCountdown.min.js"></script>
@@ -247,17 +249,12 @@
       });
     </script>
     <script>
-      const stickyTop = document.querySelector(".sticky-top");
-      const offcanvas = document.querySelector(".offcanvas");
-
-      offcanvas.addEventListener("show.bs.offcanvas", function () {
-        stickyTop.style.overflow = "visible";
-      })
-
-      offcanvas.addEventListener("hidden.bs.offcanvas", function (){
-        stickyTop.style.overflow = "hidden";
-      })
-
+      let play = document.getElementById("play");
+      let music = document.getElementById("music")
+      function playMusic() {
+        music.play();
+      }
+      play.addEventListener("click", playMusic);
     </script>
   </body>
 </html>

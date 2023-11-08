@@ -17,11 +17,12 @@ body {
 
 .hero {
   min-height: 100vh;
-  background-color: black;
-  background-image: url(../img/FGM_1056.jpg);
-  background-size: 50%;
+  background-color: #040601;
+  background-image: url(../img/FGM_1056.png);
+  background-size: 40%;
   background-repeat: no-repeat;
   background-position: 50% 70%;
+  color: white;
 }
 
 .hero h1 {
@@ -71,6 +72,8 @@ body {
   /* background-image: url(../img/flora-pattern2.png);
   background-size: cover;
   min-height: 100vh; */
+  background-color: #040601;
+  color: white;
   margin-top: -3.5rem;
   padding-top: 7rem;
   padding-bottom: 15rem;
@@ -83,14 +86,15 @@ body {
 }
 
 .home h3 {
-  color: #444;
+  /* color: #444; */
   font-size: 1.5rem;
   margin-bottom: 1rem;
+  color: white !important;
 }
 
 .home p {
   font-size: 1.1rem;
-  color: #666;
+  /* color: #666; */
 }
 
 .home .couple {
@@ -114,7 +118,7 @@ body {
   border-radius: 50%;
   position: absolute;
   left: 50%;
-  transform: translateX(-50%) translateY(65px);
+  transform: translateX(-50%) translateY(110px);
   display: flex;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
@@ -130,6 +134,8 @@ body {
   /* background-image: url(../img/flora-pattern2.png);
   background-size: cover;
   min-height: 100vh; */
+  background-color: #040601;
+  color: white;
   padding-top: 15rem;
   padding-bottom: 15rem;
 }
@@ -161,6 +167,7 @@ body {
 
 .info .card {
   background-color: rgba(255, 255, 255, 0.3);
+  color: white;
 }
 
 .info .card .card-header {
@@ -172,6 +179,11 @@ body {
 .story {
   padding-top: 10rem;
   padding-bottom: 10rem;
+  background-color: #040601;
+}
+
+.story .judul {
+  color: white;
 }
 
 .story span {
